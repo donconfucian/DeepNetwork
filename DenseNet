@@ -1,0 +1,6 @@
+from keras.layers import (Conv3D, MaxPool3D, Lambda, Dense, AveragePooling3D,
+                          BatchNormalization, Activation, Input, concatenate, GlobalAvgPool3D)
+from keras.regularizers import l2 as l2_penality
+from keras.models import Model
+
+def conv_block(x,filters,
